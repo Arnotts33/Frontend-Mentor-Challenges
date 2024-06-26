@@ -77,5 +77,3 @@ I will also dive a bit more into Figma to understand how to better use it and ge
 -   Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Arnotts33)
 
 ## Acknowledgments
-
-Test
