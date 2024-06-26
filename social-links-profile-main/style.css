@@ -52,14 +52,14 @@ main {
 
 .user-info h2 {
 	color: var(--white-hsl);
-	font-weight: 500;
+	font-weight: 600;
 	margin-bottom: 10px;
 }
 
 .user-info p {
 	color: var(--neon-green-hsl);
 	font-size: 14px;
-	font-weight: 500;
+	font-weight: 600;
 }
 
 #user-bio {
