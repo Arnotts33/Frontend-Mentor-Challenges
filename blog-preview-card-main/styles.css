@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	width: 100%;
+	background-color: hsl(47, 88%, 63%);
+	font-family: "Figtree", sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	width: 384px;
+	height: 528px;
+	background-color: #fff;
+	border: 1px solid black;
+	box-shadow: 10px 10px black;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	padding: 1.5rem;
+}
+
+.card:hover {
+	box-shadow: 15px 15px black;
+}
+
+.card img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.tag-learning {
+	width: 82px;
+	margin: 25px 0 15px 0;
+	padding: 6px 4px;
+	background-color: hsl(47, 88%, 63%);
+	text-align: center;
+	border-radius: 3px;
+	font-weight: 800;
+	font-size: clamp(12px, 1.1vw, 14px);
+}
+
+.date {
+	width: 143px;
+	font-size: clamp(12px, 1.1vw, 14px);
+	font-weight: 500;
+}
+
+.card-title {
+	margin: 20px 0;
+	font-weight: 800;
+}
+
+.card-title:hover {
+	color: hsl(47, 88%, 63%);
+	cursor: pointer;
+	caret-color: black;
+}
+
+.card-text {
+	font-size: clamp(14px, 1.1vw, 16px);
+	color: hsl(0, 0%, 50%);
+	line-height: 1.5rem;
+}
+
+.author {
+	width: 129px;
+	margin: 20px 0;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: clamp(12px, 1vw, 14px);
+	font-weight: 800;
+}
+
+.author img {
+	width: 32px;
+}
+
+@media only screen and (max-width: 480px) {
+	.card {
+		margin: 0 25px;
+	}
+}
