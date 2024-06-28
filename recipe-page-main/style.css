@@ -27,3 +27,152 @@
 	--brown-wenge-hsl: hsl(30, 10%, 34%);
 	--charcoal-dark-hsl: hsl(24, 5%, 18%);
 }
+
+/* CSS reset */
+
+/* Box sizing rules */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+/* General styling */
+
+body {
+	background-color: var(--eggshell-hsl);
+	font-family: "Outfit";
+	color: var(--brown-wenge-hsl);
+	line-height: 1.5rem;
+}
+
+@media (min-width: 600px) {
+	main {
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+h2 {
+	font-family: "Young Serif";
+	color: var(--nutmeg-hsl);
+	font-size: 1.75rem;
+	font-weight: 400;
+	margin-bottom: 1.5rem;
+}
+
+.recipe-card {
+	max-width: 46rem;
+	background-color: var(--white-hsl);
+	border-radius: 24px;
+	padding: 2.5rem;
+}
+
+.recipe-card img {
+	border-radius: 12px;
+}
+
+header h1 {
+	font-family: "Young Serif";
+	color: var(--charcoal-dark-hsl);
+	font-size: 2.5rem;
+	margin-top: 2rem;
+	font-weight: 400;
+}
+
+header p {
+	margin-top: 1rem;
+}
+
+ul,
+ol {
+	list-style-position: inside;
+	padding-left: 0.5rem;
+}
+
+li::first-letter {
+	margin-left: 0.5rem;
+}
+
+ol li,
+ul li {
+	margin-top: 0.8rem;
+}
+
+hr {
+	border: 0.5px solid var(--light-grey-hsl);
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.prep-time {
+	background-color: var(--rose-white-hsl);
+	margin: 2rem 0;
+	padding: 1.75rem;
+	border-radius: 12px;
+	/* color: var(--brown-wenge-hsl); */
+}
+
+.prep-time h3 {
+	color: var(--raspberry-dark-hsl);
+	margin-bottom: 1rem;
+}
+
+.prep-time li::marker {
+	color: var(--raspberry-dark-hsl);
+}
+
+.ingredients {
+	margin: 2rem 0;
+}
+
+.ingredients li::marker,
+.instructions li::marker {
+	color: var(--nutmeg-hsl);
+	font-weight: 700;
+}
+
+.instructions {
+	margin: 2rem 0;
+}
+
+.nutrition-facts {
+	margin-top: 2rem;
+}
+
+.nutrition-table {
+	display: block;
+	margin-top: 1.5rem;
+}
+
+.nutrition-table tbody {
+	display: block;
+}
+
+.nutrition-table tr {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+	border-bottom: 1px solid var(--light-grey-hsl);
+	padding-inline-start: 1.5rem;
+	padding-block: 0.5rem;
+}
+
+.nutrition-table .grams {
+	color: var(--nutmeg-hsl);
+	font-weight: 700;
+}
