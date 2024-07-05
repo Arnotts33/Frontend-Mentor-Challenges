@@ -84,6 +84,7 @@ body {
 	border-radius: 0.625rem;
 	overflow: hidden;
 	max-width: 600px;
+	margin: 0 1rem;
 }
 
 .product__img {
