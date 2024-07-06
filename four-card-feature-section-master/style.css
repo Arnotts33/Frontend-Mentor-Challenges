@@ -1,0 +1,165 @@
+/* Root */
+:root {
+	/* Primary */
+	--red-hsl: hsl(0, 78%, 62%);
+	--cyan-hsl: hsl(180, 62%, 55%);
+	--orange-hsl: hsl(34, 97%, 64%);
+	--blue-hsl: hsl(212, 86%, 64%);
+
+	/* Neutral */
+	--very-dark-blue-hsl: hsl(234, 12%, 34%);
+	--grayish-blue-hsl: hsl(229, 6%, 66%);
+	--very-light-gray-hsl: hsl(0, 0%, 98%);
+
+	/* Fonts */
+	--ff-poppins: "Poppins", sans-serif;
+
+	--fw-light: 200;
+	--fw-regular: 400;
+	--fw-bold: 600;
+}
+
+/* CSS reset */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+/* Media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+/* Typography reset */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+/* General styling */
+body {
+	font-family: var(--ff-poppins);
+	font-weight: var(--fw-regular);
+	font-size: 0.938rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header {
+	max-width: 540px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 5rem;
+}
+
+header h1 {
+	font-size: 1.5rem;
+	font-weight: var(--fw-light);
+	color: var(--very-dark-blue-hsl);
+}
+
+header h2 {
+	font-size: 1.5rem;
+	font-weight: var(--fw-bold);
+	color: var(--very-dark-blue-hsl);
+}
+
+header p {
+	margin-top: 1rem;
+	font-weight: var(--fw-regular);
+	color: var(--grayish-blue-hsl);
+	padding: 0 1rem;
+}
+
+.cards {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1.5rem;
+	/* margin-bottom: 2rem; */
+}
+
+.card {
+	max-width: 21.875rem;
+	margin: 0 2rem;
+	padding: 2rem;
+	border: none;
+	border-radius: 0.5rem;
+	box-shadow: 0px 5px 16px 5px var(--grayish-blue-hsl);
+}
+
+.card h3 {
+	color: var(--very-dark-blue-hsl);
+	font-size: 1.25rem;
+	margin-bottom: 0.25rem;
+	font-weight: var(--fw-bold);
+}
+
+.card p {
+	color: var(--grayish-blue-hsl);
+	font-size: 0.81rem;
+}
+
+.middle-section {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.cyan {
+	border-top: 0.25rem solid var(--cyan-hsl);
+}
+
+.red {
+	border-top: 0.25rem solid var(--red-hsl);
+}
+
+.orange {
+	border-top: 0.25rem solid var(--orange-hsl);
+}
+
+.blue {
+	border-top: 0.25rem solid var(--blue-hsl);
+}
+
+/* Icon */
+.card img {
+	display: block;
+	margin-left: auto;
+	margin-top: 2rem;
+	width: 57px;
+}
