@@ -88,7 +88,7 @@ body {
 }
 
 main {
-	padding: 5.5rem 0;
+	padding: 5rem 0;
 }
 
 header {
@@ -130,6 +130,7 @@ header p {
 
 .card {
 	max-width: 21.875rem;
+	background-color: #fff;
 	margin: 0 2rem;
 	padding: 1.6rem 2.5rem;
 	border-radius: 0.3rem;
