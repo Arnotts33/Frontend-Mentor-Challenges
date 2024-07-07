@@ -125,11 +125,10 @@ header p {
 	align-items: center;
 	justify-content: center;
 	gap: 2rem;
-	margin-inline: auto;
 }
 
 .card {
-	max-width: 21.875rem;
+	max-width: 350px;
 	background-color: #fff;
 	margin: 0 2rem;
 	padding: 1.6rem 2.5rem;
