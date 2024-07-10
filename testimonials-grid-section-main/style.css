@@ -2,8 +2,10 @@
 	/* Primary */
 	--moderate-violet-hsl: hsl(263, 55%, 52%);
 	--very-dark-grayish-blue-hsl: hsl(217, 19%, 35%);
+	--very-dark-grayish-blue-70-hsla: hsl(217, 19%, 35%, 0.7);
 	--very-dark-blackish-blue-hsl: hsl(219, 29%, 14%);
 	--white-hsl: hsl(0, 0%, 100%);
+	--white-semi-transparent-hsla: hsl(0, 0%, 100%, 0.5);
 
 	/* Neutral */
 	--light-gray-hsl: hsl(0, 0%, 81%);
@@ -49,9 +51,122 @@ picture {
 /* Styling */
 body {
 	min-height: 100vh;
+	background-color: var(--light-grayish-blue-hsl);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
 	font-family: var(--ff-primary);
+}
+
+.testimonial-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	margin-block: 5rem;
+	padding: 0 1.5rem;
+}
+
+.testimonial-card {
+	padding: 2rem;
+	border-radius: 0.5rem;
+	box-shadow: 2.5rem 3.75rem 3rem -3rem var(--very-dark-grayish-blue-hsl) / 0.25;
+}
+
+.bg-violet {
+	background-color: var(--moderate-violet-hsl);
+	color: var(--white-hsl);
+}
+
+.quote {
+	background-image: url("./images/bg-pattern-quotation.svg");
+	background-repeat: no-repeat;
+	background-position: top right 10%;
+}
+
+.bg-white {
+	background-color: var(--white-hsl);
+	color: var(--very-dark-grayish-blue-hsl);
+}
+
+.bg-white .user-info h2 {
+	color: var(--very-dark-grayish-blue-hsl);
+}
+
+.bg-white .user-info p {
+	color: var(--very-dark-grayish-blue-hsl);
+}
+
+.bg-white .user-quote {
+	color: var(--very-dark-grayish-blue-hsl);
+	font-weight: var(--fw-semi-bold);
+}
+
+.bg-white .user-testimonial {
+	color: var(--very-dark-grayish-blue-70-hsla);
+	font-weight: var(--fw-regular);
+}
+
+.bg-dark-grayish {
+	background-color: var(--very-dark-grayish-blue-hsl);
+	color: var(--white-hsl);
+}
+
+.bg-very-dark-blackish-blue {
+	background-color: var(--very-dark-blackish-blue-hsl);
+	color: var(--white-hsl);
+}
+
+.user-info {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.user-info img {
+	width: 1.75rem;
+	border-radius: 50%;
+}
+
+.user-info h2 {
+	font-size: var(--fs-400);
+	font-weight: var(--fw-regular);
+}
+
+.user-info p {
+	font-size: var(--fs-300);
+	color: var(--white-semi-transparent-hsla);
+}
+
+.user-quote {
+	font-size: var(--fs-500);
+	margin-bottom: 1.5rem;
+}
+
+.user-testimonial {
+	font-size: var(--fs-400);
+	color: var(--white-semi-transparent-hsla);
+	line-height: 1.5;
+}
+
+/* Media queries */
+@media screen and (min-width: 1100px) {
+	.testimonial-grid {
+		display: grid;
+		gap: 1.5rem;
+		grid-template-columns: repeat(4, 1fr);
+		padding-block: 2rem;
+		width: min(95%, 70rem);
+		margin-inline: auto;
+	}
+
+	.grid-col-span-2 {
+		grid-column: span 2;
+	}
+	.testimonial-card:last-child {
+		grid-column-start: 4;
+		grid-row-start: 1;
+		grid-row-end: 3;
+	}
 }
