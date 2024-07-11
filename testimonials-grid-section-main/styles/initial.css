@@ -1,0 +1,49 @@
+:root {
+	/* Primary */
+	--moderate-violet-hsl: hsl(263, 55%, 52%);
+	--very-dark-grayish-blue-hsl: hsl(217, 19%, 35%);
+	--very-dark-grayish-blue-70-hsla: hsl(217, 19%, 35%, 0.7);
+	--very-dark-blackish-blue-hsl: hsl(219, 29%, 14%);
+	--white-hsl: hsl(0, 0%, 100%);
+	--white-semi-transparent-hsla: hsl(0, 0%, 100%, 0.5);
+
+	/* Neutral */
+	--light-gray-hsl: hsl(0, 0%, 81%);
+	--light-grayish-blue-hsl: hsl(210, 46%, 95%);
+
+	/* Font Families */
+	--ff-primary: "Barlow Semi Condensed", sans-serif;
+
+	/* Font Weights */
+	--fw-regular: 500;
+	--fw-semi-bold: 600;
+
+	/* Font Sizes */
+	--fs-300: 0.6875rem;
+	--fs-400: 0.8125rem;
+	--fs-500: 1.25rem;
+}
+
+/* Box Sizing */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Reset margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+	margin: 0;
+}
+
+/* Images default settings */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
