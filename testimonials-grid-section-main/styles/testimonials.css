@@ -20,7 +20,7 @@ body {
 .testimonial-card {
 	padding: 2rem;
 	border-radius: 0.5rem;
-	box-shadow: 2.5rem 3.75rem 3rem -3rem var(--very-dark-grayish-blue-hsl) / 0.25;
+	box-shadow: 2.5rem 3.75rem 8rem -3rem var(--very-dark-grayish-blue-70-hsla);
 }
 
 /* Media queries */
