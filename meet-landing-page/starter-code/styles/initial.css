@@ -1,0 +1,39 @@
+:root {
+	/* Primary */
+	--green-hsl: hsl(192, 37%, 48%);
+	--purple-hsl: hsl(268, 34%, 53%);
+	--deep-dark-purple-hsl: hsl(240, 21%, 20%);
+
+	/* Secondary */
+	--grey-hsl: hsl(240, 10%, 57%);
+	--sky-blue-hsl: hsl(192, 90%, 77%);
+	--light-purple-hsl: hsl(268, 100%, 86%);
+	--white-hsl: hsl(0, 0%, 98%);
+
+	/* Font Famillies */
+	--ff-primary: "Red Hat Display";
+}
+
+/* Box Sizing */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Reset margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+	margin: 0;
+}
+
+/* Images default settings */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
