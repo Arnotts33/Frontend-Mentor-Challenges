@@ -10,8 +10,10 @@
 	--light-purple-hsl: hsl(268, 100%, 86%);
 	--white-hsl: hsl(0, 0%, 98%);
 
-	/* Font Famillies */
+	/* Font Families */
 	--ff-primary: "Red Hat Display";
+	--fw-regular: 400;
+	--fw-bold: 700;
 }
 
 /* Box Sizing */
@@ -34,6 +36,6 @@ p {
 /* Images default settings */
 img,
 picture {
-	max-width: 100%;
+	max-width: 110%;
 	display: block;
 }
