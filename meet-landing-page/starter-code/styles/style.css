@@ -1,3 +1,22 @@
-* {
+/* General styling */
+body {
+	min-height: 100vh;
+	background-color: var(--white-hsl);
+
 	font-family: var(--ff-primary);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	margin-block: 3rem;
+}
+
+h1 {
+	text-align: center;
+	color: var(--deep-dark-purple-hsl);
+	font-size: 2.5rem;
 }
