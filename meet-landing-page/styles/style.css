@@ -19,7 +19,7 @@ h1 {
 	color: var(--deep-dark-purple-hsl);
 	font-size: 2.5rem;
 	line-height: 2.75rem;
-	/* padding-inline: 3rem; */
+	padding-inline: 3rem;
 	font-weight: 900;
 }
 
@@ -223,11 +223,6 @@ footer p {
 		max-width: 33rem;
 	}
 
-	.built-for h2 {
-		font-size: 2.5rem;
-		line-height: 1.1;
-	}
-
 	footer h2 {
 		max-width: 28rem;
 	}
@@ -240,6 +235,7 @@ footer p {
 @media screen and (min-width: 83em) {
 	.hero {
 		width: 100%;
+		height: auto;
 		flex-direction: row;
 		justify-content: space-between;
 		margin-top: 2rem;
@@ -251,7 +247,7 @@ footer p {
 
 	.hero--img-desktop {
 		display: block;
-		width: 500px;
+		max-width: 33%;
 		height: auto;
 		position: relative;
 	}
@@ -264,17 +260,10 @@ footer p {
 		right: -3%;
 	}
 
-	.group-chat {
-		max-width: 33.75rem;
+	.banner {
+		display: flex;
+		justify-content: space-between;
 	}
-
-	.group-chat h1 {
-		/* max-width: 30rem; */
-		font-size: 4rem;
-		line-height: 1.2;
-		text-wrap: wrap;
-	}
-
 	.users-pictures {
 		padding-inline: 6rem;
 	}
