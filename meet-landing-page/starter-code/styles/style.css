@@ -234,18 +234,20 @@ footer p {
 
 @media screen and (min-width: 83em) {
 	.hero {
-		max-width: 90rem;
+		width: 100%;
+		height: auto;
 		flex-direction: row;
-		gap: 6rem;
+		justify-content: space-between;
 		margin-top: 2rem;
 	}
+
 	.hero--img-mobile {
 		display: none;
 	}
 
 	.hero--img-desktop {
 		display: block;
-		width: 33%;
+		max-width: 33%;
 		height: auto;
 		position: relative;
 	}
