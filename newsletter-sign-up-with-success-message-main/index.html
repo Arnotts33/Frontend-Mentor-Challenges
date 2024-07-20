@@ -12,14 +12,25 @@
 			href="./assets/images/favicon-32x32.png"
 		/>
 
-		<title>
-			Frontend Mentor | Newsletter sign-up form with success message
-		</title>
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="./styles/initial.css" />
+		<link rel="stylesheet" href="./styles/style.css" />
+
+		<title>Newsletter sign-up form with success message</title>
 
 		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 	</head>
 	<body>
 		<main>
+			<!-- Sign-up form start -->
 			<section class="form__card">
 				<div class="card__info">
 					<h1 class="card__info-title">Stay updated!</h1>
@@ -48,29 +59,28 @@
 					</button>
 				</form>
 			</section>
+			<!-- Sign-up form end -->
+
+			<!-- Success message start -->
+			<section class="success__card" hidden>
+				<div class="check-icon">
+					<img src="./assets/images/icon-list.svg" alt="check icon" />
+				</div>
+				<div class="success__thanks-message">
+					<h1 class="success__card-title">Thanks for subscribing!</h1>
+					<p class="success__card-text">
+						A confirmation email has been sent to
+						ash@loremcompany.com. Please open it and click the
+						button inside to confirm your subscription.
+					</p>
+				</div>
+				<div class="dismiss">
+					<button type="button" class="dismiss-btn">
+						Dismiss message
+					</button>
+				</div>
+			</section>
+			<!-- Success message end -->
 		</main>
-		<!-- Sign-up form start -->
-
-		<!-- Sign-up form end -->
-
-		<!-- Success message start -->
-		<section class="success__card" hidden>
-			<div class="check-icon">
-				<img src="./assets/images/icon-list.svg" alt="check icon" />
-			</div>
-			<div class="success__thanks-message">
-				<h1 class="success__card-title">Thanks for subscribing!</h1>
-				<p class="success__card-text">
-					A confirmation email has been sent to ash@loremcompany.com.
-					Please open it and click the button inside to confirm your
-					subscription.
-				</p>
-			</div>
-			<div class="dismiss">
-				<button type="button" class="dismiss-btn">
-					Dismiss message
-				</button>
-			</div>
-		</section>
 	</body>
 </html>

@@ -1,0 +1,34 @@
+:root {
+	/* Fonts */
+	--ff-primary: "Roboto", sans-serif;
+
+	/* Primary colors */
+	--tomato: hsl(4, 100%, 67%);
+
+	/* Neutral colors */
+	--dark-slate-grey: hsl(234, 29%, 20%);
+	--charcoal-grey: hsl(235, 18%, 26%);
+	--grey: hsl(231, 7%, 60%);
+	--white: hsl(0, 0%, 100%);
+
+	/* Font weights */
+	--fw-regular: 400;
+	--fw-bold: 700;
+
+	/* Font sizes */
+	--fs-body: 1rem;
+}
+
+/* Styling */
+
+body {
+	font-family: var(--ff-primary);
+	font-weight: var(--fw-regular);
+	font-size: var(--fs-body);
+
+	background-color: var(--dark-slate-grey);
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
