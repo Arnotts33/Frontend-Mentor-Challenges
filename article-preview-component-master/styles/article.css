@@ -148,6 +148,10 @@ body {
 		font-size: 1.25rem;
 	}
 
+	.article__author {
+		padding-bottom: 2rem;
+	}
+
 	.share-active {
 		position: absolute;
 		top: 120px;
