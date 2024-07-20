@@ -32,6 +32,12 @@
 		<main>
 			<!-- Sign-up form start -->
 			<section class="form__card">
+				<div class="form__card-image">
+					<img
+						src="./assets/images/illustration-sign-up-mobile.svg"
+						alt=""
+					/>
+				</div>
 				<div class="card__info">
 					<h1 class="card__info-title">Stay updated!</h1>
 					<p class="card__info-text">
@@ -44,8 +50,8 @@
 						<li>And much more!</li>
 					</ul>
 				</div>
-				<form action="submit" novalidate>
-					<div>
+				<form class="form__email" action="submit" novalidate>
+					<div class="email__input">
 						<label for="email">Email address</label>
 						<input
 							type="email"
@@ -54,7 +60,7 @@
 							placeholder="email@company.com"
 						/>
 					</div>
-					<button type="submit">
+					<button class="email__submit-btn" type="submit">
 						Subscribe to monthly newsletter
 					</button>
 				</form>

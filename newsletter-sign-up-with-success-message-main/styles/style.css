@@ -25,10 +25,85 @@ body {
 	font-family: var(--ff-primary);
 	font-weight: var(--fw-regular);
 	font-size: var(--fs-body);
+	color: var(--dark-slate-grey);
 
 	background-color: var(--dark-slate-grey);
 	min-height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+main {
+	height: 100%;
+}
+
+.form__card {
+	background-color: var(--white);
+	height: 100%;
+}
+
+.card__info {
+	padding: 2rem 1.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.card__info-title {
+	font-size: 2.5rem;
+}
+
+.card__info-list {
+	padding: 0;
+}
+
+.card__info-list > li {
+	list-style: none;
+	padding: 0.5rem;
+	line-height: 1.25rem;
+}
+
+.card__info-list > li::before {
+	content: url("../assets/images/icon-list.svg");
+	vertical-align: middle;
+	display: inline-table;
+	margin-right: 1rem;
+}
+
+.form__email {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	padding-inline: 1.5rem;
+}
+
+.email__input {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.email__input label {
+	font-weight: var(--fw-bold);
+	font-size: 0.8rem;
+}
+
+.email__input input {
+	margin-top: 0.5rem;
+	padding: 1rem 2rem;
+	border-radius: 0.5rem;
+	border: 1px solid var(--grey);
+	opacity: 0.5;
+}
+
+.email__submit-btn {
+	width: 100%;
+	color: var(--white);
+	background-color: var(--dark-slate-grey);
+	padding: 1rem 2rem;
+	border: none;
+	border-radius: 0.5rem;
 }
