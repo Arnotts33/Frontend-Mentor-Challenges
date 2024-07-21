@@ -31,13 +31,19 @@
 	<body>
 		<main>
 			<!-- Sign-up form start -->
-			<section class="form__card">
-				<div class="form__card-image">
+			<section class="card form__card">
+				<picture class="form__card-image">
+					<source
+						srcset="
+							./assets/images/illustration-sign-up-desktop.svg
+						"
+						media="(min-width: 40rem)"
+					/>
 					<img
 						src="./assets/images/illustration-sign-up-mobile.svg"
 						alt=""
 					/>
-				</div>
+				</picture>
 				<div class="card__info">
 					<h1 class="card__info-title">Stay updated!</h1>
 					<p class="card__info-text">
@@ -60,7 +66,11 @@
 							placeholder="email@company.com"
 						/>
 					</div>
-					<button id="email__submit-btn" type="submit">
+					<button
+						class="form__btn"
+						id="email__submit-btn"
+						type="submit"
+					>
 						Subscribe to monthly newsletter
 					</button>
 				</form>
@@ -68,20 +78,25 @@
 			<!-- Sign-up form end -->
 
 			<!-- Success message start -->
-			<section class="success__card" hidden>
+			<section class="card success__card hidden">
 				<div class="check-icon">
-					<img src="./assets/images/icon-list.svg" alt="check icon" />
+					<img
+						class="check-icon__img"
+						src="./assets/images/icon-list.svg"
+						alt="check icon"
+					/>
 				</div>
 				<div class="success__thanks-message">
 					<h1 class="success__card-title">Thanks for subscribing!</h1>
 					<p class="success__card-text">
 						A confirmation email has been sent to
-						ash@loremcompany.com. Please open it and click the
-						button inside to confirm your subscription.
+						<span class="bold">ash@loremcompany.com</span>
+						. Please open it and click the button inside to confirm
+						your subscription.
 					</p>
 				</div>
 				<div class="dismiss">
-					<button type="button" class="dismiss-btn">
+					<button type="button" class="form__btn">
 						Dismiss message
 					</button>
 				</div>

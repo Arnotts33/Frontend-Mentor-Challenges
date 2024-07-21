@@ -20,9 +20,8 @@
 }
 
 /* Styling */
-
 body {
-	/* font-family: var(--ff-primary);
+	font-family: var(--ff-primary);
 	font-weight: var(--fw-regular);
 	font-size: var(--fs-body);
 	color: var(--dark-slate-grey);
@@ -30,37 +29,34 @@ body {
 	background-color: var(--dark-slate-grey);
 	min-height: 100vh;
 	display: flex;
-	justify-content: center;
-	align-items: center; */
-}
-
-main {
-	font-family: var(--ff-primary);
-	font-weight: var(--fw-regular);
-	font-size: var(--fs-body);
-	color: var(--dark-slate-grey);
-
-	background-color: var(--dark-slate-grey);
-	min-height: 100%;
-	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-.form__card {
+.card {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas: "image", "text";
+	gap: 2.5rem;
 	background-color: var(--white);
 	max-width: 23.438rem;
 	height: 100%;
 }
 
+.hidden {
+	display: none;
+}
+
 .card__info {
-	padding: 2rem 1.5rem;
+	padding-inline: 1.5rem;
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
 }
 
-.card__info-title {
+.card__info-title,
+.success__card-title {
 	font-size: 2.5rem;
 }
 
@@ -113,7 +109,7 @@ main {
 	opacity: 0.5;
 }
 
-#email__submit-btn {
+.form__btn {
 	width: 100%;
 	color: var(--white);
 	background-color: var(--dark-slate-grey);
@@ -124,6 +120,31 @@ main {
 	transition: 200ms ease-in;
 }
 
-#email__submit-btn:hover {
+.form__btn:hover {
 	background-color: var(--charcoal-grey);
+}
+
+/* Success card */
+.check-icon {
+	margin-top: 5rem;
+}
+
+.success__card-title {
+	margin-block: 1.5rem;
+}
+
+.success__card-text {
+	margin-bottom: 10rem;
+}
+
+.check-icon__img {
+	width: 4rem;
+}
+
+.bold {
+	font-weight: var(--fw-bold);
+}
+
+.success__card {
+	padding-inline: 1rem;
 }
