@@ -40,6 +40,7 @@ main {
 
 .form__card {
 	background-color: var(--white);
+	max-width: 23.438rem;
 	height: 100%;
 }
 
@@ -55,17 +56,20 @@ main {
 }
 
 .card__info-list {
-	padding: 0;
+	margin: 0;
+	list-style-type: none;
 }
 
 .card__info-list > li {
-	list-style: none;
-	padding: 0.5rem;
 	line-height: 1.25rem;
+	position: relative;
+	margin-bottom: 1rem;
 }
 
 .card__info-list > li::before {
 	content: url("../assets/images/icon-list.svg");
+	position: absolute;
+	transform: translate(-180%, 0%);
 	vertical-align: middle;
 	display: inline-table;
 	margin-right: 1rem;
@@ -99,11 +103,17 @@ main {
 	opacity: 0.5;
 }
 
-.email__submit-btn {
+#email__submit-btn {
 	width: 100%;
 	color: var(--white);
 	background-color: var(--dark-slate-grey);
 	padding: 1rem 2rem;
 	border: none;
 	border-radius: 0.5rem;
+	cursor: pointer;
+	transition: 200ms ease-in;
+}
+
+#email__submit-btn:hover {
+	background-color: var(--charcoal-grey);
 }
