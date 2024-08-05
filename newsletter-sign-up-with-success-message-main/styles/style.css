@@ -47,6 +47,10 @@ body {
 	display: none;
 }
 
+.card__text-content {
+	background-color: var(--white);
+}
+
 .card__info {
 	display: flex;
 	flex-direction: column;
@@ -114,6 +118,7 @@ body {
 	color: var(--white);
 	background-color: var(--dark-slate-grey);
 	padding: 1rem 2rem;
+	margin-bottom: 2rem;
 	border: none;
 	border-radius: 0.5rem;
 	cursor: pointer;
@@ -128,6 +133,7 @@ body {
 .check-icon {
 	display: flex;
 	align-items: flex-end;
+	margin-top: 1rem;
 }
 
 .success__card-title {
@@ -135,7 +141,7 @@ body {
 }
 
 .success__card-text {
-	margin-bottom: 18rem;
+	margin-bottom: 16rem;
 }
 
 .check-icon__img {
