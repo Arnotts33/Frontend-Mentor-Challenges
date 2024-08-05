@@ -36,7 +36,7 @@ body {
 .card {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 2fr;
+	grid-template-rows: 1fr 2.5fr;
 	gap: 1rem;
 	background-color: var(--white);
 	max-width: 23.438rem;
@@ -126,7 +126,8 @@ body {
 
 /* Success card */
 .check-icon {
-	margin-top: 5rem;
+	display: flex;
+	align-items: flex-end;
 }
 
 .success__card-title {
@@ -134,7 +135,7 @@ body {
 }
 
 .success__card-text {
-	margin-bottom: 10rem;
+	margin-bottom: 18rem;
 }
 
 .check-icon__img {
