@@ -150,15 +150,27 @@ body {
 	padding-inline: 1rem;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 52rem) {
 	.card {
 		max-width: 58rem;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 30rem 25rem;
 		grid-template-rows: 1fr;
 		height: auto;
+		border-radius: 36px;
+		padding: 1rem;
+	}
+
+	.form__card-img {
+		display: flex;
+		justify-content: right;
 	}
 
 	.card__text-content {
 		grid-row: 1;
+		padding: 2rem;
+	}
+
+	.card__info-title {
+		font-size: 3.5rem;
 	}
 }
