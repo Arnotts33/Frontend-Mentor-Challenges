@@ -191,4 +191,8 @@ body {
 	.success__card-text {
 		margin-bottom: 2.5rem;
 	}
+
+	.hidden {
+		display: none;
+	}
 }
