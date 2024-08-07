@@ -179,4 +179,16 @@ body {
 	.card__info-title {
 		font-size: 3.5rem;
 	}
+
+	.success__card {
+		max-width: 30.5rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 3.5rem;
+	}
+
+	.success__card-text {
+		margin-bottom: 2.5rem;
+	}
 }
