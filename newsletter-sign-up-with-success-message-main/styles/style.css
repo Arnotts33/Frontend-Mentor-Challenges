@@ -94,6 +94,18 @@ body {
 	margin-bottom: 1.5rem;
 }
 
+.email__label {
+	display: flex;
+	justify-content: space-between;
+}
+
+#error__message {
+	display: none;
+	font-size: 0.8rem;
+	font-weight: var(--fw-bold);
+	color: var(--tomato);
+}
+
 .email__input {
 	display: flex;
 	flex-direction: column;
@@ -126,7 +138,7 @@ body {
 }
 
 .form__btn:hover {
-	background-color: var(--charcoal-grey);
+	background-image: linear-gradient(#ff6a3a, #ff527b);
 }
 
 /* Success card */
@@ -141,7 +153,8 @@ body {
 }
 
 .success__card-text {
-	margin-bottom: 16rem;
+	margin-bottom: 18rem;
+	line-height: 1.5rem;
 }
 
 .check-icon__img {
@@ -153,7 +166,10 @@ body {
 }
 
 .success__card {
-	padding-inline: 1rem;
+	display: none;
+	flex-direction: column;
+	padding-inline: 2rem;
+	padding-top: 6rem;
 }
 
 @media (min-width: 52rem) {
@@ -182,7 +198,7 @@ body {
 
 	.success__card {
 		max-width: 30.5rem;
-		display: flex;
+		display: none;
 		flex-direction: column;
 		justify-content: center;
 		padding: 3.5rem;
@@ -190,9 +206,5 @@ body {
 
 	.success__card-text {
 		margin-bottom: 2.5rem;
-	}
-
-	.hidden {
-		display: none;
 	}
 }

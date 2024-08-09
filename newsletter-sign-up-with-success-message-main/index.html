@@ -24,6 +24,9 @@
 		<link rel="stylesheet" href="./styles/initial.css" />
 		<link rel="stylesheet" href="./styles/style.css" />
 
+		<!-- JS Script -->
+		<script src="index.js" defer></script>
+
 		<title>Newsletter sign-up form with success message</title>
 
 		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -57,14 +60,24 @@
 							<li>And much more!</li>
 						</ul>
 					</div>
-					<form class="form__email" action="submit" novalidate>
+					<form
+						id="form"
+						class="form__email"
+						action="submit"
+						novalidate
+					>
 						<div class="email__input">
-							<label for="email">Email address</label>
+							<div class="email__label">
+								<label for="email">Email address</label>
+								<p id="error__message">Valid email required</p>
+							</div>
+
 							<input
 								type="email"
 								id="email"
 								name="email"
 								placeholder="email@company.com"
+								required
 							/>
 						</div>
 						<button
@@ -80,7 +93,7 @@
 			<!-- Sign-up form end -->
 
 			<!-- Success message start -->
-			<section class="card success__card hidden">
+			<section class="card success__card">
 				<div class="check-icon">
 					<img
 						class="check-icon__img"
@@ -92,11 +105,11 @@
 					<h1 class="success__card-title">Thanks for subscribing!</h1>
 					<p class="success__card-text">
 						A confirmation email has been sent to
-						<span class="bold">ash@loremcompany.com</span>
+						<span id="user__email" class="bold"></span>
 						. Please open it and click the button inside to confirm
 						your subscription.
 					</p>
-					<button type="button" class="form__btn">
+					<button type="button" id="dismiss__btn" class="form__btn">
 						Dismiss message
 					</button>
 				</div>
