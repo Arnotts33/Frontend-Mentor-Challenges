@@ -15,6 +15,7 @@ function validateEmail() {
 	if (!isValid(email.value) || email.value.length === 0) {
 		errorMsg.style.display = "block";
 		email.style.background = "var(--tomato)";
+		email.style.color = "red";
 		email.focus();
 	} else {
 		successCard.style.display = "flex";
