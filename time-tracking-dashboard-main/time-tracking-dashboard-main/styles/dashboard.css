@@ -1,0 +1,98 @@
+body {
+	font-family: var(--ff-rubik);
+	font-weight: var(--fw-regular);
+	color: #fff;
+	background-color: var(--very-dark-blue);
+
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.dashboard {
+	display: grid;
+	grid-template: repeat(7, 1fr) / 1fr;
+	grid-row-gap: 1rem;
+	max-width: 20.5rem;
+}
+
+.dashboard-tab {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	border-radius: 1rem;
+}
+
+.user {
+	background-color: var(--blue);
+}
+
+.user__profile {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem;
+	border-radius: 1rem;
+}
+
+.user img {
+	width: 4rem;
+}
+
+.user__activity-frequency {
+	background-color: var(--dark-blue);
+	display: flex;
+	justify-content: space-around;
+	padding: 1rem;
+}
+
+.activity__inner-tab {
+	background-color: var(--dark-blue);
+	padding: 1rem;
+	position: absolute;
+	width: 100%;
+	top: 3rem;
+	border-radius: 1rem;
+}
+
+.inner-tab__head {
+	display: flex;
+	justify-content: space-between;
+}
+
+.work {
+	background: var(--orange-work) url("../images/icon-work.svg") no-repeat
+		right;
+	height: 75px;
+}
+
+.play {
+	background: var(--soft-blue-play) url("../images/icon-play.svg") no-repeat
+		right;
+	height: 75px;
+}
+
+.study {
+	background: var(--ligth-red-study) url("../images/icon-study.svg") no-repeat
+		right;
+	height: 75px;
+}
+
+.exercice {
+	background: var(--lime-green-exercise) url("../images/icon-exercise.svg")
+		no-repeat right;
+	height: 75px;
+}
+
+.social {
+	background: var(--violet-social) url("../images/icon-social.svg") no-repeat
+		right;
+	height: 75px;
+}
+
+.self-care {
+	background: var(--soft-orange-self-care) url("../images/icon-self-care.svg")
+		no-repeat right;
+	height: 75px;
+}
