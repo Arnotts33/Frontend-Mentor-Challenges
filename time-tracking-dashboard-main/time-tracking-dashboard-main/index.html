@@ -1,80 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+			rel="stylesheet"
+		/>
 
-  Report for
-  Jeremy Robson
+		<!-- CSS -->
+		<link rel="stylesheet" href="./styles/initial.css" />
+		<link rel="stylesheet" href="./styles/dashboard.css" />
 
-  Daily
-  Weekly
-  Monthly
+		<title>Frontend Mentor | Time tracking dashboard</title>
+	</head>
+	<body>
+		<main class="dashboard">
+			<section class="dashboard-tab__user">
+				<div class="user__profile">
+					<img src="./images/image-jeremy.png" alt="user avatar" />
+					<p>Report for</p>
+					<h2>Jeremy Robson</h2>
+				</div>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+				<div class="user__activity-frequency">
+					<p>Daily</p>
+					<p>Weekly</p>
+					<p>Monthly</p>
+				</div>
+			</section>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+			<section class="dashboard-tab__work">
+				<div class="tab-background__work"></div>
+				<div class="activity__inner-tab">
+					<div class="inner-tab__head">
+						<h3>Work</h3>
+						<img src="./images/icon-ellipsis.svg" alt="elipsis" />
+					</div>
+					<h2>32hrs</h2>
+					<p>Previous - 36hrs</p>
+				</div>
+			</section>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+			<section class="dashboard-tab__play">
+				<div class="tab-background__play"></div>
+				<div class="activity__inner-tab">
+					<div class="inner-tab__head">
+						<h3>Play</h3>
+						<img src="./images/icon-ellipsis.svg" alt="elipsis" />
+					</div>
+					<h2>10hrs</h2>
+					<p>Previous - 10hrs</p>
+				</div>
+			</section>
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
+			<section class="dashboard-tab__study">
+				<div class="tab-background__study"></div>
+				<div class="activity__inner-tab">
+					<div class="inner-tab__head">
+						<h3>Study</h3>
+						<img src="./images/icon-ellipsis.svg" alt="elipsis" />
+					</div>
+					<h2>4hrs</h2>
+					<p>Previous - 10hrs</p>
+				</div>
+			</section>
 
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
+			<section class="dashboard-tab__exercice">
+				<div class="tab-background__exercice"></div>
+				<div class="activity__inner-tab">
+					<div class="inner-tab__head">
+						<h3>Exercise</h3>
+						<img src="./images/icon-ellipsis.svg" alt="elipsis" />
+					</div>
+					<h2>4hrs</h2>
+					<p>Previous - 10hrs</p>
+				</div>
+			</section>
 
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
+			<section class="dashboard-tab__social">
+				<div class="tab-background__social"></div>
+				<div class="activity__inner-tab">
+					<div class="inner-tab__head">
+						<h3>Social</h3>
+						<img src="./images/icon-ellipsis.svg" alt="elipsis" />
+					</div>
+					<h2>5hrs</h2>
+					<p>Previous - 10hrs</p>
+				</div>
+			</section>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+			<section class="dashboard-tab__self-care">
+				<div class="tab-background__self-care"></div>
+				<div class="activity__inner-tab">
+					<div class="inner-tab__head">
+						<h3>Self Care</h3>
+						<img src="./images/icon-ellipsis.svg" alt="elipsis" />
+					</div>
+					<h2>2hrs</h2>
+					<p>Previous - 10hrs</p>
+				</div>
+			</section>
+		</main>
+	</body>
 </html>
