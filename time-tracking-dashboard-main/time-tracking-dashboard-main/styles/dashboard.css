@@ -34,12 +34,14 @@ body {
 	display: flex;
 	align-items: center;
 	gap: 1rem;
-	padding: 1rem;
+	padding: 2rem;
 	border-radius: 1rem;
 }
 
 .user img {
 	width: 4rem;
+	border: 3px solid white;
+	border-radius: 50%;
 }
 
 .user__activity-frequency {
@@ -58,6 +60,9 @@ body {
 }
 
 .activity__inner-tab {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
 	background-color: var(--dark-blue);
 	padding: 1rem;
 	position: absolute;
@@ -66,9 +71,10 @@ body {
 	border-radius: 1rem;
 }
 
-.inner-tab__head {
+.inner-tab {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .tab-background {
@@ -105,4 +111,37 @@ body {
 .self-care {
 	background: var(--soft-orange-self-care) url("../images/icon-self-care.svg")
 		no-repeat right;
+}
+
+.user-id h2 {
+	font-size: 1.5rem;
+	font-weight: var(--fw-thin);
+}
+
+.user__activity-frequency p {
+	color: var(--desaturated-blue);
+	cursor: pointer;
+}
+
+.user__activity-frequency p:hover {
+	color: #fff;
+}
+
+.inner-tab__head h3 {
+	font-size: var(--fs-body);
+}
+
+.inner-tab h2 {
+	font-size: 2rem;
+	font-weight: var(--fw-thin);
+}
+
+.inner-tab p,
+.user-id p {
+	font-size: 0.938rem;
+	color: var(--pale-blue);
+}
+
+.inner-tab__head img {
+	height: 5px;
 }
