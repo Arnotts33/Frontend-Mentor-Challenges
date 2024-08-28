@@ -11,10 +11,11 @@ body {
 }
 
 .dashboard {
-	display: grid;
-	grid-template: repeat(7, 1fr) / 1fr;
-	grid-row-gap: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
 	max-width: 20.5rem;
+	margin-bottom: 3rem;
 }
 
 .dashboard-tab {
@@ -26,6 +27,7 @@ body {
 
 .user {
 	background-color: var(--blue);
+	position: relative;
 }
 
 .user__profile {
@@ -42,9 +44,17 @@ body {
 
 .user__activity-frequency {
 	background-color: var(--dark-blue);
+	height: 100px;
 	display: flex;
 	justify-content: space-around;
+	align-items: flex-end;
 	padding: 1rem;
+	width: 100%;
+	border-bottom-left-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+	z-index: -1;
+	position: absolute;
+	bottom: -50px;
 }
 
 .activity__inner-tab {
@@ -52,7 +62,7 @@ body {
 	padding: 1rem;
 	position: absolute;
 	width: 100%;
-	top: 3rem;
+	bottom: -50px;
 	border-radius: 1rem;
 }
 
@@ -61,38 +71,38 @@ body {
 	justify-content: space-between;
 }
 
+.tab-background {
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+	height: 100px;
+}
+
 .work {
 	background: var(--orange-work) url("../images/icon-work.svg") no-repeat
 		right;
-	height: 75px;
 }
 
 .play {
 	background: var(--soft-blue-play) url("../images/icon-play.svg") no-repeat
 		right;
-	height: 75px;
 }
 
 .study {
 	background: var(--ligth-red-study) url("../images/icon-study.svg") no-repeat
 		right;
-	height: 75px;
 }
 
 .exercice {
 	background: var(--lime-green-exercise) url("../images/icon-exercise.svg")
 		no-repeat right;
-	height: 75px;
 }
 
 .social {
 	background: var(--violet-social) url("../images/icon-social.svg") no-repeat
 		right;
-	height: 75px;
 }
 
 .self-care {
 	background: var(--soft-orange-self-care) url("../images/icon-self-care.svg")
 		no-repeat right;
-	height: 75px;
 }
